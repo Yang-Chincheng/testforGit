@@ -87,9 +87,9 @@ public:
 };
 
 template <typename _Key, typename _Cmp>
-const lev_t skiplist<_Key, _Cmp>::MAX_LEV = 20u;
+const lev_t skiplist<_Key, _Cmp>::MAX_LEV = 16u;
 template <typename _Key, typename _Cmp>
-const float skiplist<_Key, _Cmp>::RAND_PROB = 0.5f;
+const float skiplist<_Key, _Cmp>::RAND_PROB = 0.25f;
 
 template <typename _Key, typename _Cmp>
 skiplist<_Key, _Cmp>::iterator::iterator(MemoryPool<node> *_mp, off_t _nod): mp(_mp), nod(_nod) {}
